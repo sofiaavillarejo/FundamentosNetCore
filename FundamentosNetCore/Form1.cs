@@ -35,6 +35,24 @@ namespace FundamentosNetCore
             
             //estructura
             this.btnPulsar.BackColor = Color.Fuchsia;
+
+            //CONVERSIÓN AUTOMATICA
+            //el valor no hacemos caso, nos referimos al tipo de dato -> short
+            //short pequeño = 88;
+            //int mayor = pequeño;
+
+            //STRING A PRIMITIVO
+            string textoNumero = "1234";
+            int numero = int.Parse(textoNumero);
+            double otro = double.Parse(textoNumero);
+
+            //CASTING PRIMITIVOS 
+            int mayor = 88;
+            short pequeño = (short)mayor;
+
+            //CONVERTIR CUALQUIER OBJETO A STRING
+            string texto = mayor.ToString();
+            texto = btnPulsar.ToString();
         }
     }
 }
