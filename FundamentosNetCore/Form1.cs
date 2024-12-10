@@ -25,6 +25,7 @@ namespace FundamentosNetCore
             //new Object()
             this.txtNombre.Location = new Point(20, 10);
             
+
             //tipo primitivo
             this.txtNombre.Width = 220;
             this.txtNombre.Text = "Soy un string";
