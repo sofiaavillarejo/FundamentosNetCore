@@ -55,7 +55,7 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(84, 93);
+            txtNombre.Location = new Point(56, 84);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(250, 47);
             txtNombre.TabIndex = 2;
