@@ -12,7 +12,7 @@ namespace FundamentosNetCore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //CONFIGURAMOS EL OBJETO DE INICIO
-            Application.Run(new Form02PosicionColores());
+            Application.Run(new Form06ValidarEmail());
         }
     }
 }

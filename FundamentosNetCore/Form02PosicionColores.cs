@@ -30,6 +30,18 @@ namespace FundamentosNetCore
             int rojo = int.Parse(this.txtRojo.Text);
             int verde = int.Parse(this.txtVerde.Text);
             int azul = int.Parse(this.txtAzul.Text);
+            if (rojo < 0 || rojo > 255)
+            {
+                MessageBox.Show("El valor rojo debe estar entre 0 y 255", "Alerta", MessageBoxButtons.RetryCancel, MessageBoxIcon.Question);
+            }
+            //else if
+            //{
+            //    MessageBox.Show("El valor azul debe estar entre 0 y 255", "Alerta", MessageBoxButtons.RetryCancel, MessageBoxIcon.Question)
+            //}
+            //else
+            //{
+
+            //}
 
             ActiveForm.BackColor =  Color.FromArgb(rojo, verde, azul);
         }
