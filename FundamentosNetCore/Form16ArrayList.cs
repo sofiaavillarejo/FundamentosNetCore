@@ -48,6 +48,29 @@ namespace FundamentosNetCore
                 }
             }
 
+            //DECLARAMOS UNA COLECCION DE BUTTON
+            List<Button> botones = new List<Button>();
+            botones.Add(this.button1);
+            botones.Add(this.button2);
+            botones.Add(this.button3);
+            //EL OBJETO ES RECONOCIBLE POR SU TIPADO T
+            botones[0].BackColor = Color.AliceBlue;
+
+            //TENEMOS ERRORES DE COMPILACION Y NO TENEMOS QUE EJECUTAR PARA VERLOS -> VENTAHA
+            //botones.Add(this.textBox1);
+
+            this.button1.Click += MetodoDelegado;
+            this.button1.Click += MetodoDelegadooo;
+        }
+
+        private void MetodoDelegadooo(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void MetodoDelegado(object sender, EventArgs e)
+        {
+
         }
     }
 }

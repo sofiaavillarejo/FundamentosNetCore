@@ -12,7 +12,7 @@ namespace FundamentosNetCore
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //CONFIGURAMOS EL OBJETO DE INICIO
-            Application.Run(new Form16ArrayList());
+            Application.Run(new Form22ClasesMascota());
         }
     }
 }
